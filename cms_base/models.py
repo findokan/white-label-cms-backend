@@ -32,7 +32,6 @@ class Article(BaseModel):
     def __str__(self):
         return self.title
 
-
 class Resource(BaseModel):
     url = models.URLField(max_length=300)
     short_name = models.CharField(max_length=50)

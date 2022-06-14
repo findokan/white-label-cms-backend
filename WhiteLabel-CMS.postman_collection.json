@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "a28b3af1-96e6-475d-8313-0342c02e3bef",
+		"name": "WhiteLabel-CMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21468648"
+	},
+	"item": [
+		{
+			"name": "Tag Requests",
+			"item": [
+				{
+					"name": "List All Tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/cms/tags/",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"cms",
+								"tags",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Tag by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/cms/tags/3",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"cms",
+								"tags",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url_base",
+			"value": "http://127.0.01:8000"
+		}
+	]
+}

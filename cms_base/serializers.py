@@ -22,7 +22,7 @@ class ArticleListSerializer(serializers.ModelSerializer):
     tag = TagSerializer(many=True)
     class Meta:
         model = Article
-        fields = ['title', 'author', 'header_image_src', 'updated_at', 'tag']
+        fields = ['id', 'title', 'author', 'header_image_src', 'updated_at', 'tag']
 
 class ArticleDetailSerializer(serializers.ModelSerializer):
     author = UserWithLimitedInfoSerializer()
@@ -30,4 +30,4 @@ class ArticleDetailSerializer(serializers.ModelSerializer):
     resources = ResourceSerializer(many=True)
     class Meta:
         model = Article
-        fields = ['title', 'author', 'header_image_src', 'content', 'updated_at', 'tag', 'resources']
+        fields = ['id', 'title', 'author', 'header_image_src', 'content', 'updated_at', 'tag', 'resources']

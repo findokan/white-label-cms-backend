@@ -162,7 +162,7 @@ dmypy.json
 cython_debug/
 
 # migration files
-*/migrations/*
+# */migrations/*
 
 # static files
 staticfiles/

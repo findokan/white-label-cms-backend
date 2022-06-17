@@ -1,1 +1,1 @@
-web:gunicorn the_weather.wsgi
+web:gunicorn white_label_cms.wsgi
